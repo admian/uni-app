@@ -1,0 +1,284 @@
+.order-container{
+	margin-bottom: 20upx;
+}
+.order-icon{
+	width: 32upx;
+	height: 32upx;
+	margin-right: 10upx;
+}
+.order-item{
+	margin: 20upx 20upx 0 20upx;
+	box-shadow:0px 0px 10upx rgba(0,0,0,0.16);
+	border-radius:16upx;
+}
+.order-i{
+	padding: 44upx 40upx 20upx 40upx;
+	font-size: 24upx;
+	color: #999999;
+	display: flex;
+	justify-content: space-between;
+}
+.order-n{
+	font-size: 28upx;
+	font-weight: 400;
+	color: #333333;
+	padding-bottom: 20upx;
+	padding-left: 40upx;
+	display: flex;
+	align-items: center;
+}
+.order-n text{
+	margin-left: 10upx;
+}
+.order-b{
+	display: flex;
+	justify-content: flex-end;
+	
+}
+.order-g{
+	padding: 2upx 28upx 4upx 28upx;	
+	opacity:1;
+	border-radius:14upx 0upx 14upx 0upx;
+	font-size: 20upx;
+	color: #FFFFFF;
+	text-align: center;
+}
+.g-color{
+	background:rgba(125,223,255,1);
+}
+.p-color{
+	background:rgba(65,170,168,1);
+}
+.d-color{
+	background:rgba(100,99,143,1);
+}
+.n-color{
+	background: rgba(150, 207, 186, 1);
+}
+.l-color{
+	background: rgba(83, 117, 140, 1);
+}
+.tab-container{
+	padding: 20upx 0;
+}
+.milestone{
+	box-shadow:0upx 0upx 10upx rgba(0,0,0,0.16);
+	border-radius:16upx;
+	margin: 0 20upx 20upx 20upx;
+}
+.orderInfo{
+	padding: 40upx 36upx 40upx 40upx;
+	border-bottom: 2upx solid #E5E5E5;
+}
+.orderCouier{
+	font-size: 28upx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.paio{
+	color: #999999;
+}
+.orderNumber{
+	margin-top: 20upx;
+	font-size: 28upx;
+}
+.orderItem{
+	padding: 30upx 30upx 0 30upx;
+}
+.item-miles{
+	display: flex;
+	color: #999999;
+	
+}
+.left-mile{
+	text-align: right;	
+	padding-bottom:40upx;
+}
+.date{font-size: 24upx;}
+.time{font-size: 20upx;width: 70upx;}
+.mile-icon{	width: 32upx;	height: 32upx;}
+.center-mile{
+	border-left: 2upx solid  #E5E5E5;
+	position: relative;
+	margin: 0 40upx;
+}
+.center-miles{
+	/* border-left: 2upx solid  #E5E5E5; */
+	position: relative;
+	margin: 0 40upx;
+}
+.circle{
+	width: 14upx;
+	height: 14upx;
+	background: #CCCCCC;
+	border-radius: 50%;
+	margin: 9upx 9upx;
+}
+.line-circle{
+	width: 32upx;
+	height: 32upx;
+	background: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: -16upx;
+}
+.right-mile{
+	/* padding-left: 40upx; */
+	padding-bottom:40upx;
+}
+.name{
+	font-size: 28upx;
+}
+.des{
+	font-size: 24upx;
+	margin-top: 6upx;
+}
+
+/* 当前最新物流 */
+.color-new{
+	color: #EA8C1B;
+}
+.circle-new{
+	background: #EA8C1B;
+	width: 14upx;
+	height: 14upx;
+	border-radius: 50%;
+	margin: 9upx 9upx;
+}
+.color-old{
+	color: #CCCCCC;
+}
+
+.overOrder{
+	padding: 10upx;
+}
+.overHeight{
+	overflow-y: hidden;
+	height: 120upx;
+	
+}
+.moreCollapse{
+	font-size: 28upx;
+	color: #B6B6B6;
+	display: flex;
+	justify-content: center;
+}
+.moreIcon{
+	width: 32upx;
+	height: 28upx;
+}
+/* -------------------------------------------------- */
+.order-details{
+	margin-top: 20upx;
+	padding: 0 20upx;
+}
+.so-order-details{
+	padding: 0 20upx;
+}
+.info{
+	padding: 40upx 0 20upx 40upx;
+	box-shadow:0px 0px 10upx rgba(0,0,0,0.16);
+	border-radius:16upx;
+	margin-bottom: 20upx;
+}
+.order-info-title{
+	display: flex;
+	justify-content: flex-start;
+	font-size: 28upx;
+	color: #EA8C1B;
+	font-weight: bold;
+}
+.title-icon{
+	width: 32upx;
+	height: 32upx;
+	margin-right: 10upx;
+}
+.item-info{
+	display: flex;
+	justify-content: space-between;
+	padding: 30upx 40upx 30upx 0 ;
+	border-bottom:2upx solid rgba(229,229,229,1);
+}
+.item-infos{
+	display: flex;
+	justify-content: space-between;
+	padding: 30upx 40upx 20upx 0 ;
+}
+.orderitem-info{
+	padding: 30upx 40upx 30upx 0 ;
+	border-bottom:2upx solid rgba(229,229,229,1);
+}
+.orderitem-infos{
+	padding: 30upx 40upx 20upx 0 ;
+}
+.sku-tiem{
+	display: flex;
+	justify-content: space-between;
+}
+.text-instru{
+	white-space:normal;
+	word-break:break-all;
+	word-wrap:break-word; 
+	padding: 30upx 40upx 20upx 0;
+	font-size: 28upx;
+}
+.mess{
+	padding: 30upx 40upx 30upx 0;
+}
+.info-mess{
+	font-size: 28upx;
+	color: #EA8C1B;
+	font-weight: 400;
+	margin-right: 20upx;
+	margin-bottom: 20upx;
+	font-family:Arial;
+	font-weight:400;
+}
+.number{
+	font-size:28upx;	
+	color:#333333;
+}
+.address{
+	font-size:24upx;
+	color:rgba(153,153,153,1);
+}
+.courier-text{
+	font-size: 28upx;
+	padding: 20upx 0;
+	border-bottom: 2upx solid #E5E5E5;
+}
+.courier-num{
+	font-size: 28upx;
+	padding: 20upx 0;
+	
+}
+.more{
+	text-align: center;
+	margin-top: 30upx;
+	margin-right: 40upx;
+}
+.down-icon{
+	width: 40upx;
+	height: 40upx;
+}
+.order-username{
+	margin-right: 20upx;
+}
+/* ---------------------------------------------------- */
+	.backTop-icon{
+		width: 84upx;
+		height: 84upx;
+		position: fixed;
+		bottom: 130upx;
+		right: 40upx;
+		border: 2upx  #B6B6B6 solid;
+		border-radius: 50%;
+		background: rgba(255,255,255,.4);	
+	}
+	.up-icon{
+		margin: 26upx 26upx;
+		width: 32upx;
+		height: 32upx;
+	}

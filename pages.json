@@ -1,0 +1,773 @@
+{
+	"pages": 
+	[ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		//login登陆页
+		{
+		    "path" : "pages/splash/splash",
+		    "style" : {
+				"app-plus": {
+					"titleNView": false, //禁用原生导航栏
+					"bounce":"none" //禁用页面回弹效果
+				}
+			}
+		}, 
+		{
+			"path": "pages/login/login",	
+			"backgroundColor": "rgb(37,44,65)",
+			"style": {
+				"app-plus": {
+					"titleNView": false, //禁用原生导航栏
+					"bounce":"none" //禁用页面回弹效果
+				}
+			}
+		}, 
+		//home主页面
+		{
+			"path" : "pages/taber/home"	,
+			"style" : {
+				"navigationBarTitleText": "e+ Solutions",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {//
+					//"titleNView": false ,//禁用原生导航栏
+					"bounce":"none" //禁用页面回弹效果
+				}
+			}
+		},
+		//storage主页面
+		{
+			"path" : "pages/taber/inventory",	
+			 "style" : {
+			   "app-plus": {
+				   "titleNView": false, //禁用原生导航栏
+				   "scrollIndicator":"none" ,//禁用
+				   "bounce":"none" //禁用页面回弹效果
+			   }
+			}
+		},
+		//create主页面
+		{
+			"path" : "pages/taber/create",	
+			 "style" : {
+				"app-plus": {
+				"titleNView": false, //禁用原生导航栏
+				"bounce":"none" //禁用页面回弹效果
+				}
+			}
+		},
+		//order主页面
+		{
+			"path" : "pages/taber/order",	
+			"style" : {
+				"app-plus": {
+					"titleNView": false, //禁用原生导航栏
+					"scrollIndicator":"none" ,//禁用
+					"bounce":"none" //禁用页面回弹效果
+				}
+			}
+		},
+		//profile个人主页面
+		{
+			"path" : "pages/taber/profile",	
+			"style" : {
+				"app-plus": {
+					"titleNView": false ,//禁用原生导航栏
+					"bounce":"none" //禁用页面回弹效果
+				}
+			}
+		},
+		{
+            "path" : "pages/home/statistics",
+            "style" : {
+				"navigationBarTitleText": "統計",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				 "app-plus": {
+					"titleNView":{
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						},{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "首頁",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						}],
+						"padding":"20px"
+					}, 
+					"bounce":"none" //禁用页面回弹效果
+				}
+			}
+        },
+		{
+		    "path" : "pages/home/message",
+		    "style" : {
+				"navigationBarTitleText": "消息",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				 "app-plus": {
+					"titleNView":{
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						},{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "首頁",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						}],
+						"padding":"20px"
+					}, 
+					"bounce":"none" //禁用页面回弹效果
+				}
+			}
+		},
+			{
+			    "path" : "pages/home/address-book",
+			    "style" : {
+					"navigationBarTitleText": "地址簿",
+					"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+					"backgroundColor": "#EA8C1B",
+					"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+					 "app-plus": {
+						"titleNView":{
+							"autoBackButton":"false",
+							"buttons": [{
+								"fontSrc": "/static/iconfont.ttf",
+								"text": "\ue612",
+								"width": "auto",
+								"fontSize": "32upx",
+								"color": "#FFFFFF",
+								"background": "rgba(0,0,0,0)",
+								"float":"left"
+							},{
+								"fontSrc": "/static/iconfont.ttf",
+								"text": "首頁",
+								"width": "auto",
+								"fontSize": "32upx",
+								"color": "#FFFFFF",
+								"background": "rgba(0,0,0,0)",
+								"float":"left"
+							},{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue613",
+							"width": "60upx",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)"
+						}],
+							"padding":"20px"
+						}, 
+						"bounce":"none" //禁用页面回弹效果
+					}
+				}
+			},	
+		{
+			"path" : "pages/home/order",	
+			"style" : {
+				"app-plus": {
+					"titleNView": false, //禁用原生导航栏
+					"scrollIndicator":"none" ,//禁用
+					"bounce":"none" //禁用页面回弹效果
+					
+				}
+			}
+		},
+		{
+			"path" : "pages/home/inventory",	
+			 "style" : {
+			   "app-plus": {
+					"titleNView": false, //禁用原生导航栏
+					"bounce":"none", //禁用页面回弹效果
+					"scrollIndicator":"none" //禁用
+			   }
+			}
+		},
+		{
+		    "path" : "pages/inventory/inventory-search",
+		    "style" : {
+				 "app-plus": {
+				"titleNView": false //禁用原生导航栏
+				}
+			}
+		},
+		{
+			"path" : "pages/home/create",	
+			 "style" : {
+				"titleNView": false ,//禁用原生导航栏
+				"bounce":"none" //禁用页面回弹效果
+			}
+		},
+		
+		{
+            "path" : "pages/create/store-in-order",
+            "style" : {
+				"navigationBarTitleText": "新增入庫訂單",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue614",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						}],
+						"padding":"20px"
+					}, 
+					"bounce":"none" //禁用页面回弹效果
+				}
+			}
+        },
+		{
+		    "path" : "pages/courier/si-courier",
+		    "style" : {
+				"navigationBarTitleText": "快遞公司",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				 "app-plus": {
+					"titleNView":{
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						}],
+						"padding":"20px"
+					}, 
+					"bounce":"none" //禁用页面回弹效果
+				}
+			}
+		},
+		 {
+		    "path" : "pages/create/si-add-skuinfo",
+		    "style" : {
+				"navigationBarTitleText": "新增商品",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						 },
+						{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue610",
+							"width": "32upx",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)"
+						}],
+						"padding":"20px"
+					} 
+				}
+			}
+		},
+		{
+		    "path" : "pages/create/pick-sku",
+		    "style" : {
+				"navigationBarTitleText": "選擇商品",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						},/* {
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue611",
+							"width": "32upx",
+							"fontSize": "32upx",
+							"color": "rgba(225,225,225,.4)",
+							"background": "rgba(0,0,0,0)"
+						}, */
+						{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue613",
+							"width": "60upx",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)"
+						}],
+						"padding":"20px"
+					} 
+				}
+			}
+		},
+		{
+		    "path" : "pages/create/si-add-instruction",
+		    "style" : {
+				"navigationBarTitleText": "添加入庫指示",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						},
+						{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue610",
+							"width": "32upx",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)"
+						}],
+						"padding":"20px"
+					} 
+				}
+			}
+		},
+		{
+		    "path" : "pages/create/store-out-order",
+		    "style" : {
+				 "navigationBarTitleText": "新增出庫訂單",
+				 "navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				 "backgroundColor": "#EA8C1B",
+				 "backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				 "app-plus": {
+				 	"titleNView": {
+				 		"autoBackButton":"false",
+				 		"buttons": [{
+				 			"fontSrc": "/static/iconfont.ttf",
+				 			"text": "\ue614",
+				 			"width": "32upx",
+				 			"fontSize": "32upx",
+				 			"color": "#FFFFFF",
+				 			"background": "rgba(0,0,0,0)",
+				 			"float":"left"
+				 		}],
+				 		"padding":"20px"
+				 	}, 
+				 	"bounce":"none" //禁用页面回弹效果
+				 }
+			}
+		},
+		{
+		    "path" : "pages/create/consignee",
+		    "style" : {
+				"navigationBarTitleText": "收貨人信息",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						 }
+						/* ,{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue610",
+							"width": "32upx",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)"
+						} */],
+						"padding":"20px"
+					} 
+				}
+			}
+		},
+		{
+		    "path" : "pages/home/add-address",
+		    "style" : {
+				"navigationBarTitleText": "添加地址",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						},
+						{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue610",
+							"width": "32upx",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)"
+						}],
+						"padding":"20px"
+					} 
+				}
+			}
+		},
+        {
+            "path" : "pages/courier/so-courier",
+            "style" : {
+				"navigationBarTitleText": "快遞公司及服務",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						}],
+						"padding":"20px"
+					} 
+				}
+			}
+        },
+		
+        {
+            "path" : "pages/create/so-add-skuinfo",
+            "style" : {
+				"navigationBarTitleText": "商品信息",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						}
+						// ,{
+						// 	"fontSrc": "/static/iconfont.ttf",
+						// 	"text": "\ue610",
+						// 	"width": "32upx",
+						// 	"fontSize": "32upx",
+						// 	"color": "#FFFFFF",
+						// 	"background": "rgba(0,0,0,0)"
+						// }
+						],
+						"padding":"20px"
+					} 
+				}
+			}
+        },
+		{
+			"path" : "pages/create/search-sku",
+			"style" : {
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+				}
+			}
+		},
+		{
+			"path" : "pages/create/so-selelct-sku",
+			"style" : {
+				"navigationBarTitleText": "商品信息",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						}/* ,
+						{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue611",
+							"width": "32upx",
+							"fontSize": "32upx",
+							"color": "rgba(255,255,255,.4)",
+							"background": "rgba(0,0,0,0)"
+						} */],
+						"padding":"20px"
+					} 
+				}
+			}
+		},
+		{
+			"path":"pages/order/si-all-order",
+			"style" : {
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						}/*,
+						 {
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue60e",
+							"width": "60upx",
+							"fontSize": "32upx",
+							"color": "rgba(225,225,225,.4)",
+							"background": "rgba(0,0,0,0)"
+						}, {
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue611",
+							"width": "32upx",
+							"fontSize": "32upx",
+							"color": "rgba(225,225,225,.4)",
+							"background": "rgba(0,0,0,0)"
+						}*/],
+						"padding":"20px"
+					} 
+				}
+			}
+		},
+		{
+			"path":"pages/order/so-all-order",
+			"style" : {
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						}/*,
+						 {
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue60e",
+							"width": "60upx",
+							"fontSize": "32upx",
+							"color": "rgba(225,225,225,.4)",
+							"background": "rgba(0,0,0,0)"
+						}, {
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue611",
+							"width": "32upx",
+							"fontSize": "32upx",
+							"color": "rgba(225,225,225,.4)",
+							"background": "rgba(0,0,0,0)"
+						}*/],
+						"padding":"20px"
+					} 
+				}
+			}
+		},
+		{
+			"path":"pages/order/si-order-information",
+			"style" : {
+				"navigationBarTitleText": "入庫訂單信息",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						}],
+						"padding":"20px"
+					} 
+				}
+			}
+		},
+		{
+			"path":"pages/order/so-order-information",
+			"style" : {
+				"navigationBarTitleText": "出庫訂單信息",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						}],
+						"padding":"20px"
+					} 
+				}
+			}
+		},
+        {
+            "path" : "pages/settings/settings",
+            "style" : {
+				"navigationBarTitleText": "設置",
+				"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+				"backgroundColor": "#EA8C1B",
+				"backgroundColorTop":"#EA8C1B",//顶部窗口的背景色(IOS)
+				"app-plus": {
+					"bounce":"none", //禁用页面回弹效果
+					"titleNView":  {
+						"autoBackButton":"false",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue612",
+							"width": "auto",
+							"fontSize": "32upx",
+							"color": "#FFFFFF",
+							"background": "rgba(0,0,0,0)",
+							"float":"left"
+						}],
+						"padding":"20px"
+					} 
+				}
+			}
+        }
+        
+        ,{
+            "path" : "pages/create/scan/scan",
+            "style" : {
+				"titleNView": false ,//禁用原生导航栏
+				"bounce":"none" //禁用页面回弹效果
+			}
+        }
+    ],
+	"globalStyle": {//应用的状态栏、导航条、标题、窗口背景色
+		"navigationBarBackgroundColor": "#EA8C1B",//导航栏背景颜色
+		"backgroundColor": "#EA8C1B",
+		"backgroundColorTop":"#EA8C1B"//顶部窗口的背景色(IOS)
+    },
+	 "tabBar": {
+			"color": "#B6B6B6", //默认颜色
+			"selectedColor": "rgba(234, 140, 27, 1)", //选中的颜色
+			"backgroundColor": "rgb(255,255,255)",//tab背景色rgb(37,44,65)
+			"list": [
+			{
+				"pagePath": "pages/taber/home",
+				"iconPath": "static/tab/A0101_home_b6b6b6_24px_3x.png",
+				"selectedIconPath": "static/tab/A0201_home_ea8c1b_24px_3x.png",
+				"text": "首頁"
+			}, {
+				"pagePath": "pages/taber/inventory",
+				"iconPath": "static/tab/A0102_inventiry_b6b6b6_24px_3x.png",
+				"selectedIconPath": "static/tab/A0202_inventiry_ea8c1b_24px_3x.png",
+				"text": "庫存"
+			}, {
+				"pagePath": "pages/taber/create",
+				"iconPath": "static/tab/A0103_create_b6b6b6_24px_3x.png",
+				"selectedIconPath": "static/tab/A0203_create_ea8c1b_24px_3x.png",
+				"text": "新建"
+			}, {
+				"pagePath": "pages/taber/order",
+				"iconPath": "static/tab/A0104_order_b6b6b6_24px_3x.png",
+				"selectedIconPath": "static/tab/A0204_order_ea8c1b_24px_3x.png",
+				"text": "訂單"
+			}, {
+				"pagePath": "pages/taber/profile",
+				"iconPath": "static/tab/A0105_profile_b6b6b6_24px_3x.png",
+				"selectedIconPath": "static/tab/A0205_profile_ea8c1b_24px_3x.png",
+				"text": "我的"
+			}]
+		}, 
+	"globalStyle": {
+		"backgroundColor": "rgb(37,44,65)"
+	}
+}

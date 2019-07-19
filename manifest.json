@@ -1,0 +1,138 @@
+{
+    "name" : "e+Solutions",
+    "appid" : "__UNI__3F847BA",
+    "description" : "",
+    "versionName" : "1.0.1",
+    "versionCode" : 102,
+    "transformPx" : false,
+    /* "networkTimeout" : {
+       // "uploadFile" : 15000,
+       // "request" : 15000
+    //}, *//* 5+App特有相关 */
+    "app-plus" : {
+        //启用自定义组件模式
+        "usingComponents" : true,
+        //配置iphonex 安全区
+        "safearea" : {
+            "bottom" : {
+                "offset" : "none"
+            }
+        },
+        /* 5+App特有相关 */
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : false,
+            "waiting" : false,
+            "autoclose" : false,
+            "delay" : 0
+        },
+        "modules" : {
+            "Push" : {},
+            "Statistic" : {}
+        },
+        /* 模块配置 */
+        "distribute" : {
+            /* 应用发布信息 */
+            "android" : {
+                /* android打包配置 */
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>", // 允许一个程序访问CellID或WiFi热点来获取粗略的位置
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>", // 允许一个程序访问精良位置(如GPS) 
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>", //允许程序访问有关GSM网络信息
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>", // 允许程序访问Wi-Fi网络状态信息
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>", // 请求访问使用照相设备
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>", // 允许程序改变网络连接状态
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>", // 允许程序改变Wi-Fi连接状态
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>", //访问闪光灯,android开发网提示HTC Dream不包含闪光灯
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>", //允许程序打开网络套接字
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>", //允许程序修改全局音频设置
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>", //允许挂载和反挂载文件系统可移动存储
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>", //允许程序读取底层系统日志文件
+                    "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>", //允许一个程序接收到 ACTION_BOOT_COMPLETED广播在系统完成启动
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>", //  允许程序录制音频
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>", // 允许访问振动设备
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>", //   允许使用PowerManager的 WakeLocks保持进程在休眠时从屏幕消失
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>", //
+                    "<uses-permission android:name=\"android.permission.RECEIVE_USER_PRESENT\"/>"
+                ]
+            },
+            "ios" : {},
+            /* ios打包配置 */
+            "sdkConfigs" : {
+                "speech" : {},
+                "statics" : {
+                    "umeng" : {
+                        "appkey_ios" : "5cf64c073fc195218a000632",
+                        "channelid_ios" : "appStore",
+                        "appkey_android" : "5cf64bd9570df38dc2000089",
+                        "channelid_android" : "googlePlayStore"
+                    }
+                }
+            },
+            "icons" : {
+                "ios" : {
+                    "appstore" : "static/app-icon/icon_1024px.png",
+                    "ipad" : {
+                        "app" : "",
+                        "app@2x" : "",
+                        "notification" : "",
+                        "notification@2x" : "",
+                        "proapp@2x" : "",
+                        "settings" : "",
+                        "settings@2x" : "",
+                        "spotlight" : "",
+                        "spotlight@2x" : ""
+                    },
+                    "iphone" : {
+                        "app@2x" : "static/app-icon/AppIcons_ios_120px.png",
+                        "app@3x" : "static/app-icon/AppIcons_ios_180px.png",
+                        "notification@2x" : "static/app-icon/AppIcons_ios_40px.png",
+                        "notification@3x" : "static/app-icon/AppIcons_ios_60px.png",
+                        "settings@2x" : "static/app-icon/AppIcons_ios_58px.png",
+                        "settings@3x" : "static/app-icon/AppIcons_ios_87px.png",
+                        "spotlight@2x" : "static/app-icon/AppIcons_ios_80px.png",
+                        "spotlight@3x" : "static/app-icon/AppIcons_ios_120px.png"
+                    }
+                },
+                "android" : {
+                    "hdpi" : "static/app-icon/AppIcons_Android_72px_hdpi.png",
+                    "ldpi" : "static/app-icon/AppIcons_Android_72px_hdpi.png",
+                    "mdpi" : "static/app-icon/AppIcons_Android_48px_mdpi.png",
+                    "xhdpi" : "static/app-icon/AppIcons_Android_96px_xhdpi.png",
+                    "xxhdpi" : "static/app-icon/AppIcons_Android_144px_xxhdpi.png",
+                    "xxxhdpi" : "static/app-icon/AppIcons_Android_192px_xxxhdpi.png"
+                }
+            },
+            "splashscreen" : {
+                "ios" : {
+                    "iphone" : {
+                        "retina35" : "static/splash/splash_ios_640x960.png",
+                        "iphonex" : "static/splash/splash_ios_1125x2436.png",
+                        "retina40" : "static/splash/splash_ios_640x1136.png",
+                        "retina47" : "static/splash/splash_ios_750x1334.png",
+                        "retina55" : "static/splash/splash_ios_1242x2208.png",
+                        "portrait-896h@2x" : "static/splash/splash_ios_828x1792.png",
+                        "portrait-896h@3x" : "static/splash/splash_ios_1242x2688.png"
+                    }
+                },
+                "android" : {
+                    "xxhdpi" : "static/splash/splash_android_1080x1882.png",
+                    "hdpi" : "static/splash/splash_android_480x762.png",
+                    "xhdpi" : "static/splash/splash_android_720x1242.png"
+                }
+            }
+        }
+    },
+    /* SDK配置 */
+    "quickapp" : {},
+    /* 快应用特有相关 */
+    "mp-weixin" : {
+        /* 小程序特有相关 */
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : true
+        }
+    }
+}
